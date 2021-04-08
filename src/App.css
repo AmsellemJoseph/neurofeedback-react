@@ -20,10 +20,19 @@
     padding-top: 12px
 }
 
-.MuiAppBar-colorPrimary {
+.MuiAppBar-colorPrimary,.MuiPaper-root,.MuiListItemIcon-root {
     color: #a7d5f2!important;
     background-color: #734226!important;
 }
+
+.MuiAppBar-colorPrimary{
+    border-bottom: 1.5px dotted #a7d5f2!important;
+}
+
+.MuiPaper-root{
+    border-left: 1.5px solid #a7d5f2!important;
+}
+
 
 .MuiIconButton-root {
     padding: 2px!important;
