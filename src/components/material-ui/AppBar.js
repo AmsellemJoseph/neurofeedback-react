@@ -20,6 +20,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import HomeIcon from '@material-ui/icons/Home';
+import { Link } from 'react-router-dom'
 
 const drawerWidth = 240;
 
@@ -28,22 +30,17 @@ const useStyles = makeStyles((theme) => ({
   list: {
     width: 250,
   },
-  divider:{
-    background:'#a7d5f2',
+  divider: {
+    background: '#a7d5f2',
   },
-  chevron:{
-    color:'#a7d5f2',
+  chevron: {
+    color: '#a7d5f2',
   },
   fullList: {
     width: 'auto',
   },
-  hamburger:{
-    '@media and (max-width:480px)':{
-      background:'black',
-    }
-  },
   root: {
-    display:'flex',
+    display: 'flex',
     flexGrow: 1,
   },
   appBar: {
@@ -129,25 +126,25 @@ export default function ProminentAppBar(props) {
   return (
     <div className={classes.root}>
       <React.Fragment>
-      <CssBaseline />
-      <HideOnScroll {...props}>
-      <AppBar>
-        <Toolbar className={classes.toolbar}>
-          
-          <Typography className={classes.title} variant="h5" noWrap>
-            <Banniere/>
-          </Typography>
+        <CssBaseline />
+        <HideOnScroll {...props}>
+          <AppBar>
+            <Toolbar className={classes.toolbar}>
 
-          <IconButton
-          
-           onClick={handleDrawerOpen}
-           className={clsx(classes.menuButton, open && classes.hide)}
-           aria-label="display more actions" edge="end" color="inherit">
-          <MenuIcon  style={{height:'40px',width:'40px',margin:'-30px'}} />
-          </IconButton >
-        </Toolbar>
-      </AppBar>
-      </HideOnScroll>
+              <Typography className={classes.title} variant="h5" noWrap>
+                <Banniere />
+              </Typography>
+
+              <IconButton
+
+                onClick={handleDrawerOpen}
+                className={clsx(classes.menuButton, open && classes.hide)}
+                aria-label="display more actions" edge="end" color="inherit">
+                <MenuIcon style={{ height: '40px', width: '40px', margin: '-30px' }} />
+              </IconButton >
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
       </React.Fragment>
       <Drawer
         className={classes.drawer}
@@ -160,20 +157,22 @@ export default function ProminentAppBar(props) {
       >
         <div className={classes.drawerHeader}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronRightIcon classes={{root: classes.chevron}}/> : <ChevronRightIcon classes={{root: classes.chevron}}/>}
+            {theme.direction === 'ltr' ? <ChevronRightIcon classes={{ root: classes.chevron }} /> : <ChevronRightIcon classes={{ root: classes.chevron }} />}
           </IconButton>
         </div>
-        <Divider classes={{root: classes.divider}}/>
+        <Divider classes={{ root: classes.divider }} />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+
+          <Link style={{textDecoration:'none',color:'#a7d5f2'}} to='Accueil'>
+            <ListItem button key={'Accueil'}>
+              <ListItemIcon><HomeIcon /></ListItemIcon>
+              <ListItemText primary='Accueil' />
             </ListItem>
-          ))}
+          </Link>
+
         </List>
         <div className='divider'>
-        <Divider classes={{root: classes.divider}}/>
+          <Divider classes={{ root: classes.divider }} />
         </div>
         <List>
           {['All mail', 'Trash', 'Spam'].map((text, index) => (
