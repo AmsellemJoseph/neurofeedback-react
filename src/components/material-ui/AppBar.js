@@ -22,6 +22,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import HomeIcon from '@material-ui/icons/Home';
 import { Link } from 'react-router-dom'
+import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 
 const drawerWidth = 240;
 
@@ -61,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   toolbar: {
-    minHeight: 128,
+    minHeight: 110,
     alignItems: 'flex-start',
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(2),
@@ -105,6 +106,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 0,
   },
 }));
+
+
 
 
 export default function ProminentAppBar(props) {
@@ -163,7 +166,7 @@ export default function ProminentAppBar(props) {
         <Divider classes={{ root: classes.divider }} />
         <List>
 
-          <Link style={{textDecoration:'none',color:'#a7d5f2'}} to='Accueil'>
+          <Link style={{textDecoration:'none',color:'#a7d5f2'}} to='/accueil'>
             <ListItem button key={'Accueil'}>
               <ListItemIcon><HomeIcon /></ListItemIcon>
               <ListItemText primary='Accueil' />
@@ -175,12 +178,12 @@ export default function ProminentAppBar(props) {
           <Divider classes={{ root: classes.divider }} />
         </div>
         <List>
-          {['All mail', 'Trash', 'Spam'].map((text, index) => (
-            <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-              <ListItemText primary={text} />
+        <Link style={{textDecoration:'none',color:'#a7d5f2'}} to='/contact'>
+            <ListItem button key={'Contact'}>
+              <ListItemIcon><ContactPhoneIcon /></ListItemIcon>
+              <ListItemText primary='Contact' />
             </ListItem>
-          ))}
+          </Link>
         </List>
       </Drawer>
       <main
