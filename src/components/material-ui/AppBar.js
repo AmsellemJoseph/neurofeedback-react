@@ -278,7 +278,7 @@ export default function ButtonAppBar() {
     >
       <List>
         <Typography className='wellBar'>
-          Wellness Netanya
+          Wellness Natanya
         </Typography>
         <Divider classes={{ root: classes.divider }} />
            <Link style={{ textDecoration: 'none', color: '#a7d5f2' }} to='/accueil'>
