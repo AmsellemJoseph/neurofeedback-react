@@ -6,12 +6,13 @@ import { green, purple } from '@material-ui/core/colors';
 const EnterButton = withStyles((theme) => ({
     root: {
         borderRadius: '9999px',
-        width:'180px',
-        height:'100px',
-        color: theme.palette.getContrastText(purple[500]),
-        backgroundColor: purple[500],
+        fontSize:'20px',
+        width:'150px',
+        height:'50px',
+        color: '#a7d5f2',
+        backgroundColor: '#401902',
         '&:hover': {
-            backgroundColor: purple[700],
+            backgroundColor: '#995832',
         },
     },
 }))(Button);
@@ -29,7 +30,7 @@ export default function CustomizedButtons() {
     return (
         <div>
             <EnterButton variant="contained" color="primary" className={classes.margin}>
-                Custom CSS
+                Entrez
       </EnterButton>
         </div>
     );

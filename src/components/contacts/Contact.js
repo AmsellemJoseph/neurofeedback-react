@@ -31,20 +31,21 @@ const Contact = () => {
                         img={<WhatsAppIcon
                             style={{ width: '50px', height: '50px' }} />}
                         contact='WHATSAPP'
-                        info={<a href='https://wa.me/+972548136396' target='_blank'>Jenny</a>}
-                        info2={<a href='https://wa.me/+972523473910' target='_blank'>Joseph</a>}
+                        info={<a href='https://wa.me/+972548136396' target='_blank' rel="noreferrer">Jenny</a>}
+                        info2={<a href='https://wa.me/+972523473910' target='_blank' rel="noreferrer">Joseph</a>}
                     />
                     <InfoContact
                         img={<FacebookIcon
                             style={{ width: '50px', height: '50px' }} />}
                         contact='FACEBOOK'
                         info='Notre page'
-                        info2={<a target='_blank' href='https://www.facebook.com/neurofeedbacknatanya/'>Neurofeedback Natanya</a>} />
+                        info2={<a target='_blank' rel="noreferrer" href='https://www.facebook.com/neurofeedbacknatanya/'>Neurofeedback Natanya</a>} />
                 </div>
                 <div className='containerInfoMap'>
                     <Map />
                 </div>
             </div>
+            <div className='vide'></div>
         </div>
     )
 }

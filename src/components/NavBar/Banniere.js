@@ -1,14 +1,14 @@
 import React from 'react'
-import BanniereLogo from "../../assets/images/Baniere.png"
+import Banniere from '../../assets/images/BanniereWellness.png'
 
-const Banniere = ()=>{
+const BanniereNavBar = ()=>{
 
 
     return(
-        <div>
-            <img className="Banniere-img" src={BanniereLogo} alt="Banniere de l'entreprise"/>
+        <div >
+            <img className="Banniere-img" src={Banniere} alt="Banniere de l'entreprise"/>
         </div>
     )
 }
 
-export default Banniere
+export default BanniereNavBar
