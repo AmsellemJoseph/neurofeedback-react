@@ -5,7 +5,7 @@ const BanniereNavBar = ()=>{
 
 
     return(
-        <div >
+        <div class>
             <img className="Banniere-img" src={Banniere} alt="Banniere de l'entreprise"/>
         </div>
     )

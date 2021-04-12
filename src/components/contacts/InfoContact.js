@@ -9,8 +9,8 @@ const InfoContact = (props) => {
             <div className='bgImg'>
                 <div>{props.img}</div>
             </div>
-            <h2>{props.contact}</h2>
-            <p>{props.info}</p>
+            <h2 style={{marginTop:'-0px'}}>{props.contact}</h2>
+            <p style={{marginBottom:'5px'}}>{props.info}</p>
             <p>{props.info2}</p>
         </div>
     )

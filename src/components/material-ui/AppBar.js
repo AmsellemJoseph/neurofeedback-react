@@ -281,7 +281,7 @@ export default function ButtonAppBar() {
           Wellness Natanya
         </Typography>
         <Divider classes={{ root: classes.divider }} />
-           <Link style={{ textDecoration: 'none', color: '#a7d5f2' }} to='/accueil'>
+           <Link style={{ textDecoration: 'none', color: '#a7d5f2' }} to='/home'>
              <ListItem button key={'Accueil'}>
                <ListItemIcon><HomeIcon /></ListItemIcon>
                <ListItemText primary='Accueil' />
