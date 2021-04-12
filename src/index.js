@@ -4,6 +4,7 @@ import App from './App';
 import Font from './utility/Font'
 import { HashRouter } from 'react-router-dom'
 import 'leaflet/dist/leaflet.css';
+import './utility/FontAwesome'
 
 ReactDOM.hydrate(
   <HashRouter>

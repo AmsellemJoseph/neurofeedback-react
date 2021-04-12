@@ -300,3 +300,96 @@
         height: 42px;
     }
 }
+
+.DescriptifMainContainer{
+    width: 100%;
+    height: auto;
+    background: rgb(153,88,50);
+background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+
+}
+
+.DescriptifMainContainerGD{
+
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.containerDescriptifGauche{
+    display: flex;
+    align-items: center;
+    text-align: right;
+
+    width: 50%;
+    padding: 30px;
+}
+.containerDescriptifGauche h2, .containerDescriptifDroite h2{
+    font-size: 25px;
+    text-decoration: underline;
+    color: #a7d5f2;
+}
+.containerDescriptifGauche p, .containerDescriptifDroite p{
+    font-size: 20px;
+    color: #a7d5f2;
+    margin-top: 15px;
+}
+.containerDescriptifDroite{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+
+    width: 50%;
+    padding: 30px;
+}
+
+@media screen and (max-width:840px) {
+    .DescriptifMainContainerGD{
+        justify-content: center;
+    }
+    .containerDescriptifGauche,.containerDescriptifDroite{
+        display: flex;
+        align-items: center;
+        text-align: right;
+    
+        width: 70%;
+        padding: 30px;
+    }
+    .containerDescriptifGauche h2, .containerDescriptifDroite h2{
+        font-size: 20px;
+    }
+    .containerDescriptifGauche p, .containerDescriptifDroite p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:750px) {
+    .containerDescriptifGauche,.containerDescriptifDroite{
+        display: flex;
+        align-items: center;
+        text-align: right;
+    
+        width: 90%;
+        padding:5px 0px;
+    }
+    .DescriptifMainContainerGD{
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:505px) {
+    .containerDescriptifGauche h2, .containerDescriptifDroite h2{
+        font-size: 15px;
+    }
+    .containerDescriptifGauche p, .containerDescriptifDroite p{
+        font-size: 10px;
+    }
+}
