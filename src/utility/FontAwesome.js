@@ -10,6 +10,8 @@ import {faVideo as fasVideo} from '@fortawesome/free-solid-svg-icons';
 import {faChalkboardTeacher as fasChalkboardTeacher} from '@fortawesome/free-solid-svg-icons';
 import {faRss as fasRss} from '@fortawesome/free-solid-svg-icons';
 import {faLeaf as fasLeaf} from '@fortawesome/free-solid-svg-icons';
+import {faHome as fasHome} from '@fortawesome/free-solid-svg-icons';
+import {faAddressBook as fasAddressBook} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     fasPortrait,
@@ -19,6 +21,8 @@ library.add(
     fasChalkboardTeacher,
     fasRss,
     fasLeaf,
+    fasHome,
+    fasAddressBook,
 
     // more icons go here
 );

@@ -54,11 +54,6 @@ const Home = () => {
         },
         
     ])
-    // className: 'containerDescriptifDroite',
-    // font: 'rss',
-    // titre: 'Blog',
-    // explication: "Restez informé sur l'actualité.",
-    // link:'/contact',
     return (
         <div>
             <Nav />
@@ -72,33 +67,9 @@ const Home = () => {
                             </Link>
                         )
                     })}
-                    {/* <div className='containerDescriptifGauche'>
-                        <Descriptif />
-                        <FontAwesomeIcon icon={['fas', 'leaf']} />
-                    </div>
-                    <div className='containerDescriptifGauche'>
-                        <Descriptif />
-                        <FontAwesomeIcon icon={['fas', 'leaf']} />
-                    </div>
-                    <div className='containerDescriptifGauche'>
-                        <Descriptif />
-                        <FontAwesomeIcon icon={['fas', 'leaf']} />
-                    </div>
-                    <div className='containerDescriptifGauche'>
-                        <Descriptif />
-                        <FontAwesomeIcon icon={['fas', 'leaf']} />
-                    </div>
-                    <div className='containerDescriptifGauche'>
-                        <Descriptif />
-                        <FontAwesomeIcon icon={['fas', 'leaf']} />
-                    </div>
-                    <div className='containerDescriptifGauche'>
-                        <Descriptif />
-                        <FontAwesomeIcon icon={['fas', 'leaf']} />
-                    </div> */}
                 </div>
             </div>
-            {/* <Popup /> */}
+            <Popup />
             <Footer />
         </div>
     )
