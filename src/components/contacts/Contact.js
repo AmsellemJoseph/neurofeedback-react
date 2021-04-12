@@ -29,7 +29,7 @@ const Contact = () => {
                             style={{ width: '50px', height: '50px' }} />}
                         contact='WHATSAPP'
                         info={<a href='https://wa.me/+972548136396' target='_blank' rel="noreferrer">Jenny</a>}
-                        info2={<a href='https://wa.me/+972523473910' target='_blank' >Joseph</a>}
+                        info2={<a href='https://wa.me/+972523473910' target='_blank' rel="noreferrer" >Joseph</a>}
                     />
                     <InfoContact
                         img={<PhoneIcon

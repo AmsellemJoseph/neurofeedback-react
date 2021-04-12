@@ -14,10 +14,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
-    backgroundColor: theme.palette.background.paper,
-    border: '2px solid #000',
+    backgroundColor: '#401902',
+    outlineRadius:'10px',
+    outline: '4px solid #3cadf3',
     boxShadow: theme.shadows[5],
-    padding: theme.spacing(2, 4, 3),
+    padding: theme.spacing(2, 2, 2),
   },
 }));
 
@@ -25,15 +26,14 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TransitionsModal() {
 
-    const [video,setVideo]=useState([Video01,Video02]);
+    const [video]=useState([Video01,Video02]);
     const rand = Math.floor(Math.random()*video.length)
-    console.log(rand);
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
+  // const handleOpen = () => {
+  //   setOpen(true);
+  // };
 
   const handleClose = () => {
     setOpen(false);
