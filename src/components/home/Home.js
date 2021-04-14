@@ -52,10 +52,24 @@ const Home = () => {
             explication: "Restez informé sur l'actualité à travers de nombreux posts.",
             link:'/blog',
         },
+        {
+            className: 'containerDescriptifGauche',
+            font: 'heart',
+            titre: "Témoignages",
+            explication: "Vos expériences comptent beaucoup pour nous. Faites en nous part.",
+            link:'/temoignages',
+        },
+        {
+            className: 'containerDescriptifDroite',
+            font: 'address-book',
+            titre: 'Contact',
+            explication: "Prenez contact avec nous pour plus d'informations ou pour prendre rendez-vous.",
+            link:'/contact',
+        },
         
     ])
     return (
-        <div>
+        <div className='mainHome'>
             <Nav />
             <div className='DescriptifMainContainer'>
                 <div className='DescriptifMainContainerGD'>

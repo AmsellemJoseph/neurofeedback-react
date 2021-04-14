@@ -6,6 +6,10 @@
     
 }
 
+.App{
+    background-color: #401902;
+    height: 100vh;
+}
 
 /* Nav Bar */
 
@@ -27,6 +31,7 @@
 
 .MuiAppBar-colorPrimary{
     border-bottom: 1.5px dotted #a7d5f2!important;
+    border-top: 1.5px dotted #a7d5f2!important;
 }
 
 /* .MuiPaper-root:nth-child(){
@@ -71,10 +76,9 @@
 
 
 /* Accueil */
-
 .containerAccueil {
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background: url('./assets/images/accueil.jpg')no-repeat center/cover;
 }
 
@@ -123,6 +127,7 @@
 }
 
 @media screen and (max-width:385px) {
+
     .logoNeuro img {
         width: 100px;
         height: 100px;
@@ -279,6 +284,7 @@
     }
 }
 
+
 .footer{
     width: 100%;
     height: 80px;
@@ -306,7 +312,7 @@
 .DescriptifMainContainer{
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: rgb(153,88,50);
 background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
 
@@ -394,5 +400,244 @@ background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
     }
     .containerDescriptifGauche p, .containerDescriptifDroite p{
         font-size: 10px;
+    }
+}
+
+/* CARD WELLNESS */
+
+.Wellness{
+    background: rgb(153,88,50);
+    background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+}
+
+.containerCard{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 50%;
+    height: 175px;
+    background: #401902;
+}
+.designBackCard{
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    height: 175px;
+    width: 230px;
+    background: #3cadf3;
+    clip-path: polygon(0% 0%, 50% 0, 25% 50%, 50% 100%, 0% 100%);
+}
+.photoCard{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 12.5px;
+    left: 25px;
+    width: 150px;
+    height: 150px;
+    background: #734226;
+    border-radius: 50%;
+    box-shadow: 19px 0px 86px #3cadf3;
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+
+}
+
+.photoCard img{
+    border-radius: 50%;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+}
+.Infos{
+    /* position: absolute; */
+    left: 250px;
+    text-align: center;
+    border-right:1px solid #a7d5f2;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+.Infos h4{
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.Infos h3{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.Infos h2{
+    font-size: 17px;
+}
+.Infos p{
+    font-size: 17px;
+}
+.Infos img{
+    margin-right: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+}
+.contact p{
+    margin: 10px 10px;
+}
+@media screen and (max-width:1070px) {
+    .containerCard{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 70%;
+        height: 175px;
+        background: #401902;
+    }
+}
+@media screen and (max-width:780px) {
+    .containerCard{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        border-radius: 5px;
+        margin: 20px auto;
+        width: 100%;
+        height: 175px;
+        background: #401902;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .containerCard{
+        display: flex;
+    justify-content: flex-end;
+        margin: 20px auto;
+        background: #401902;
+    }
+    
+    
+    .Infos{
+        /* position: absolute; */
+        left: 250px;
+        text-align: center;
+        border-right:none;
+        padding-right: 0px;
+        border-radius: 20px;
+    }
+    .Infos h4{
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-decoration: underline;
+    }
+    .Infos h3{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    .Infos h2{
+        font-size: 13px;
+    }
+    .Infos p{
+        font-size: 10px;
+    }
+    .Infos img{
+        margin-right: 20px;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact p{
+        margin: 10px 10px;
+    }
+}
+@media screen and (max-width:450px) {
+    .photoCard{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background: #734226;
+        border-radius: 50%;
+        box-shadow: 19px 0px 86px #3cadf3;
+        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    
+    }
+    
+    .photoCard img{
+        border-radius: 50%;
+        text-align: center;
+
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+    .designBackCard{
+        border-radius: 5px;
+        position: absolute;
+        left: -5px;
+        top: 0px;
+        height: 175px;
+        width: 150px;
+        background: #3cadf3;
+        clip-path: polygon(0% 0%, 50% 0, 25% 50%, 50% 100%, 0% 100%);
+    }
+}
+@media screen and (max-width:380px) {
+    .photoCard{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 75px;
+        height: 75px;
+        background: #734226;
+        border-radius: 50%;
+        box-shadow: 19px 0px 86px #3cadf3;
+        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    
+    }
+    
+    .photoCard img{
+        border-radius: 50%;
+        text-align: center;
+
+        width: 75px;
+        height: 75px;
+        background-size: cover;
+    }
+}
+@media screen and (max-width:329px) {
+    .photoCard{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 65px;
+        height: 65px;
+        background: #734226;
+        border-radius: 50%;
+        box-shadow: 19px 0px 86px #3cadf3;
+        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    
+    }
+    
+    .photoCard img{
+        border-radius: 50%;
+        text-align: center;
+
+        width: 65px;
+        height: 65px;
+        background-size: cover;
     }
 }
