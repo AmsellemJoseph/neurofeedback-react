@@ -5,6 +5,9 @@
     font-family: 'Lato';
     
 }
+html{
+    width: 100%;
+}
 
 .App{
     background-color: #401902;
@@ -243,6 +246,21 @@
     width: 100%;
     height: 50px;
     background-color: #995832;
+}
+.cardDetails{
+    /* width: 60%; */
+    margin: auto;
+    text-align: left;
+}
+.cardDetails h2{
+    color: #3cadf3;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.cardDetails p{
+    font-size: 20px;
+    margin: 15px 0;
+    text-indent: 20px
 }
 
 @media screen and (max-width:890px) {
@@ -639,5 +657,109 @@ background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
         width: 65px;
         height: 65px;
         background-size: cover;
+    }
+}
+.articleContainer{
+
+    padding-top: 50px;
+    margin: auto;
+    background: rgb(153,88,50);
+    background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+}
+.article{
+    text-align: justify;
+    margin: auto;
+    width: 80%;
+    color: #3cadf3;
+}
+.article p,.article h2{
+    font-family: 'Lora';
+    font-size: 20px;
+    color: #3cadf3;
+}
+.article p{
+    padding: 15px;
+}
+.questionImportant{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    text-decoration: underline;
+}
+.article h2{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.methodeImg{
+    border: 2px solid #3cadf3;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    margin: 25px 0;
+    width: auto;
+    height: 350px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0 #3cadf3;
+}
+.listeMethode{
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .article p,.article h2{
+        font-size: 16px;
+    }
+    .article p{
+        padding: 15px;
+    }
+    .article h2{
+        font-size: 25px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 50px;
+    }
+    .methodeImg{
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        text-align: center;
+        margin: 15px 0;
+        width: auto;
+        height: 200px;
+    }
+}
+@media screen and (max-width:335px) {
+    .article p,.article h2{
+        font-size: 16px;
+    }
+    .article p{
+        padding: 15px;
+    }
+    .article h2{
+        font-size: 25px;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 50px;
+    }
+    .methodeImg{
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        text-align: center;
+        margin: 15px 0;
+        width: auto;
+        height: 125px;
     }
 }

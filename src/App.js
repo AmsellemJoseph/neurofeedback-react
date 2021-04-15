@@ -3,6 +3,7 @@ import Accueil from './components/accueil/Accueil'
 import Contact from './components/contacts/Contact'
 import Home from './components/home/Home'
 import Wellness from './components/wellnessProviders/Wellness'
+import Methode from './components/methode/Methode'
 import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/home" render={()=>(<Home/>)}/>
         <Route exact path="/contact" render = {()=>(<Contact/>)}/>
         <Route exact path="/wellness" render = {()=>(<Wellness/>)}/>
+        <Route exact path="/methode" render = {()=>(<Methode/>)}/>
         <Route path='*' render={()=>(<Redirect to='/accueil'/>)}/>
       </Switch>
       </div>

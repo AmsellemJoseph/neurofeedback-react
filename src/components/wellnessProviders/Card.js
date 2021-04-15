@@ -5,9 +5,6 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Jenny from './Jenny'
-import Israel from '../../utility/pays/Israel'
-
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '90%',
@@ -21,14 +18,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SimpleAccordion() {
+export default function SimpleAccordion(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Accordion>
         <AccordionSummary style={{backgroundColor:'#401902'}}
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon style={{color:"#3cadf3"}}/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -36,22 +33,29 @@ export default function SimpleAccordion() {
             <div className='designBackCard'>
 
              </div>
-             <div className='photoCard'><Jenny/></div>
+             <div className='photoCard'><img src={props.photo} alt='Photo de profil du wellness provider'/></div>
              <div className='Infos'>
-             <h4>Jennifer Amsellem</h4>
-             <h3>Facilitatrice</h3>
-             <h2>David remez 13,Netanya</h2>
-             <p><Israel/>Israel</p>
+             <h4>{props.nom}</h4>
+             <h3>{props.status}</h3>
+             <h2>{props.adresse}</h2>
+             <p><img src={props.drapeau} alt='drapeau du pays'/> {props.pays}</p>
              <div className='contact'>
-             <p>WhatsApp</p>
-             <p>0548136396</p>
+             {props.whatsapp?(<p><a style={{cursor:'pointer',color:"#a7d5f2"}} href={props.whatsapp} target='_blank' rel="noreferrer">Whattsapp</a></p>):null}
+             <p><a style={{cursor:'pointer',color:"#a7d5f2"}} href={props.tel}>{props.telAffiche}</a></p>
              </div>
              </div>
          </div>
         </AccordionSummary>
-        <AccordionDetails style={{borderTop:'1px dotted #3cadf3'}}>
-          <Typography>
-            Bonjour je m'appelle Jenny!!
+        <AccordionDetails style={{borderTop:'1px dotted #3cadf3',margin:'auto'}}>
+          <Typography style={{width:'100%'}}>
+            <div className='cardDetails'>
+            <h2 style={{textAlign:'center'}}>Mon histoire</h2>
+            <p>{props.description1}</p>
+            <p>{props.description2}</p>
+            <p>{props.description3}</p>
+            <p>{props.description4}</p>
+            <p>{props.description5}</p>
+            </div>
           </Typography>
         </AccordionDetails>
       </Accordion>

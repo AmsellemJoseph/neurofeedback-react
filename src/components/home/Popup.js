@@ -6,6 +6,7 @@ import Fade from '@material-ui/core/Fade';
 import ReactPlayer from 'react-player'
 import Video01 from '../../assets/videos/001.mp4'
 import Video02 from '../../assets/videos/002.mp4'
+import Video03 from '../../assets/videos/003.mp4'
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TransitionsModal() {
 
-    const [video]=useState([Video01,Video02]);
+    const [video]=useState([Video01,Video02,Video03]);
     const rand = Math.floor(Math.random()*video.length)
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);

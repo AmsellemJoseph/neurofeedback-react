@@ -6,7 +6,7 @@ const Font = () => {
   useEffect(() => {
     WebFont.load({
       google: {
-        families: ['Josefin Sans', 'Lato', 'Gentium Book Basic']
+        families: ['Josefin Sans', 'Lato', 'Gentium Book Basic','Roboto','Lora']
       }
     });
   }, []);

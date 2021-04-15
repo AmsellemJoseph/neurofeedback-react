@@ -13,6 +13,7 @@ import {faLeaf as fasLeaf} from '@fortawesome/free-solid-svg-icons';
 import {faHome as fasHome} from '@fortawesome/free-solid-svg-icons';
 import {faAddressBook as fasAddressBook} from '@fortawesome/free-solid-svg-icons';
 import {faHeart as fasHeart} from '@fortawesome/free-solid-svg-icons';
+import {faHandPointRight as fasHandPointRight} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     fasPortrait,
@@ -25,6 +26,7 @@ library.add(
     fasHome,
     fasAddressBook,
     fasHeart,
+    fasHandPointRight,
 
     // more icons go here
 );
