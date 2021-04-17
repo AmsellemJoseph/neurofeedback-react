@@ -131,16 +131,6 @@ export default function ButtonAppBar() {
         })}
       </List>
 
-      <Divider classes={{ root: classes.divider }} />
-
-      <List>
-        <Link style={{ textDecoration: 'none', color: '#a7d5f2' }} to='/temoignages'>
-          <ListItem button key={'Contact'}>
-            <ListItemIcon><FontAwesomeIcon icon={['fas', 'heart']} /></ListItemIcon>
-            <ListItemText primary='Témoignages' />
-          </ListItem>
-        </Link>
-      </List>
       
       <Divider classes={{ root: classes.divider }} />
 
