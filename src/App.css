@@ -55,25 +55,30 @@ html{
 }
 
 
-@media screen and (max-width:790px) {
+@media screen and (max-width:865px) {
     .Banniere-img {
         height: 60px!important;
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:730px) {
     .Banniere-img {
         height: 50px!important;
     }
 }
-@media screen and (max-width:530px) {
+@media screen and (max-width:610px) {
     .Banniere-img {
         height: 40px!important;
     }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     .Banniere-img {
         height: 30px!important;
+    }
+}
+@media screen and (max-width: 360px) {
+    .Banniere-img {
+        height: 27px!important;
     }
 }
 
@@ -772,7 +777,7 @@ section{
     text-decoration: underline;
     margin-bottom: 50px;
 }
-.blogContainer,.formationContainer{
+.blogContainer,.formationContainer,.newsContainer{
     width: 100%;
     height: auto;
     background: rgb(153,88,50);
@@ -815,4 +820,34 @@ section{
 }
 .textBase p:last-child{
     text-align: right;
+}
+
+.imgContainer{
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgContainer img{
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+.imgContainer a{
+    padding: 0px;
+    margin: 20px;
+    width: 200px;
+}
+
+.newsContainer h2{
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    text-decoration: underline;
+    color: #3cadf3;
 }

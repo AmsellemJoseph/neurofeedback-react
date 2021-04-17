@@ -15,6 +15,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import { Link } from 'react-router-dom'
 import Banniere from '../NavBar/Banniere'
 import Logo from '../NavBar/LogoNavBar'
+import LogoRepre from '../NavBar/LogoRepre'
+import LogoFacil from '../NavBar/LogoFacil'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
@@ -37,6 +39,11 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    display:'flex'
+  },
+  logoNav:{
+    marginRight:'15px',
+    paddingRight:'20px'
   },
 }));
 
@@ -155,7 +162,9 @@ export default function ButtonAppBar() {
           <Toolbar>
 
             <Typography variant="h6" className={classes.title}>
-              <Logo classes={{ root: classes.logoNav }} />
+              <Logo classesName={classes.logoNav } />
+              <LogoRepre classesName={classes.logoNav } />
+              <LogoFacil classesName={classes.logoNav } />
             </Typography>
             <Typography variant="h6" className={classes.title}>
               <Banniere />

@@ -6,6 +6,7 @@ import Wellness from './components/wellnessProviders/Wellness'
 import Methode from './components/methode/Methode'
 import Blog from './components/blog/Blog'
 import Formation from './components/formation/Formation'
+import News from './components/news/News'
 import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route exact path="/methode" render = {()=>(<Methode/>)}/>
         <Route exact path="/blog" render = {()=>(<Blog/>)}/>
         <Route exact path="/formation" render = {()=>(<Formation/>)}/>
+        <Route exact path="/news" render = {()=>(<News/>)}/>
         <Route path='*' render={()=>(<Redirect to='/accueil'/>)}/>
       </Switch>
       </div>

@@ -83,7 +83,7 @@ const Home = () => {
                     })}
                 </div>
             </div>
-            <Popup />
+            {/* <Popup /> */}
             <Footer />
         </div>
     )
