@@ -10,7 +10,7 @@ html{
 }
 
 .App{
-    background-color: #401902;
+    background:#bfb3a3;
     height: 100vh;
 }
 
@@ -27,15 +27,20 @@ html{
     padding-top: 8px
 }
 
-.MuiAppBar-colorPrimary,.MuiPaper-root,.MuiListItemIcon-root {
-    color: #a7d5f2!important;
-    background-color: #734226!important;
+/* .MuiAppBar-colorPrimary,.MuiListItemIcon-root {
+    color: #bfb3a3!important;
+    background-color: #11468c!important;
+}
+
+.MuiPaper-root{
+    color: #11468c!important;
+    background-color: #11468c!important;
 }
 
 .MuiAppBar-colorPrimary{
     border-bottom: 1.5px dotted #a7d5f2!important;
     border-top: 1.5px dotted #a7d5f2!important;
-}
+} */
 
 /* .MuiPaper-root:nth-child(){
     border-left: 1.5px solid #a7d5f2!important;
@@ -160,14 +165,14 @@ html{
 }
 
 .containerContact{
+
     display: flex;
     width: 100%;
     height: auto;
-    /* flex-direction: r; */
     justify-content: center;
     align-items: center;
     color: #a7d5f2!important;
-    background-color: #995832!important;
+    background-color: #bfb3a3!important;
 }
 .carte{
     overflow: hidden;
@@ -183,17 +188,19 @@ html{
     top: 0px;
 }
 .containerInfoContact{
+    outline: #11468c 2px solid;  
     width: 50%;
     height: auto;
-    background: #401902;
+    background: #e5ded5;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .containerInfoMap{
+    outline: #11468c 2px solid;      
     position: relative;
     height: 430px;
-    background: #401902;
+    background: #e5ded5;
     width: 45%;
 }
 .info{
@@ -208,19 +215,21 @@ html{
     margin-top: 20px;
     text-decoration: underline;
     font-size: 20px;
+    color: #11468c;
 }
 .info p{
 
     font-size: 18px;
+    color: #11468c;
 }
 .info a{
-    color:#a7d5f2;
+    color:#11468c;
 }
 .info a:hover{
     color: #3cadf3;
 }
 .info a:visited{
-    color: #a7d5f2;
+    color: #11468c;
 }
 
 .info p:nth-child(3){
@@ -233,25 +242,31 @@ html{
     justify-content: center;
     margin: auto;
     text-align: center;
-    border:2px solid #a7d5f2;
-    background: #401902;
+    border:2px solid #11468c;
+    color: #11468c;
+    /* 11468c */
+    background: #e5ded5;
     width: 75px;
     height: 75px;
 }
 
 .contactez-nous{
+    margin-top: 50px;
     text-align: center;
     font-size: 35px;
-    color: #a7d5f2;
-    background-color: #995832;
+    color: #4c89bf;
+    background-color: #bfb3a3;
     padding: 20px;
     text-decoration: underline;
 }
-.vide{
+.contactez-nous h2{
+    text-align: left;
+}
+/* .vide{
     width: 100%;
     height: 50px;
-    background-color: #995832;
-}
+    background-color: #bfb3a3;
+} */
 .cardDetails{
     /* width: 60%; */
     margin: auto;
@@ -309,9 +324,11 @@ html{
 
 
 .footer{
+    position: absolute;
+    bottom: 0;
     width: 100%;
-    height: 80px;
-    background: #734226;
+    height: 40px;
+    background: #11468c;
     border-top: 1px dotted #3cadf3;
     border-bottom: 1px dotted #3cadf3;
     display: flex;
@@ -336,8 +353,7 @@ html{
     display: flex;
     width: 100%;
     height: auto;
-    background: rgb(153,88,50);
-background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+    background:#bfb3a3;
 
 }
 
@@ -361,11 +377,11 @@ background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
 .containerDescriptifGauche h2, .containerDescriptifDroite h2{
     font-size: 25px;
     text-decoration: underline;
-    color: #a7d5f2;
+    color: #061359;
 }
 .containerDescriptifGauche p, .containerDescriptifDroite p{
     font-size: 20px;
-    color: #a7d5f2;
+    color: #061359;
     margin-top: 15px;
 }
 .containerDescriptifDroite{
@@ -429,8 +445,7 @@ background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
 /* CARD WELLNESS */
 
 .Wellness{
-    background: rgb(153,88,50);
-    background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+    background:#bfb3a3;
 }
 
 .containerCard{
@@ -668,22 +683,35 @@ background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
 
     padding-top: 50px;
     margin: auto;
-    background: rgb(153,88,50);
-    background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+    background:#bfb3a3;
 }
 .article{
     text-align: justify;
     margin: auto;
     width: 80%;
-    color: #3cadf3;
+    color: #11468c;
 }
 .article p,.article h2{
     font-family: 'Lora';
     font-size: 20px;
-    color: #3cadf3;
+    color: #11468c;
 }
 .article p{
     padding: 15px;
+}
+.sommaire li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.sommaire a{
+    color: #11468c;
+    font-size: 18px;
+}
+@media screen and (max-width:640px) {
+    /* .sommaire a{
+        font-size: 12px;
+    } */
+    
 }
 .questionImportant{
     text-align: center;
@@ -705,7 +733,7 @@ section{
 }
 
 .methodeImg{
-    border: 2px solid #3cadf3;
+    border: 2px solid #11468c;
     position: relative;
     transform: translateX(-50%);
     left: 50%;
@@ -714,7 +742,7 @@ section{
     width: auto;
     height: 350px;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px 0 #3cadf3;
+    /* box-shadow: 5px 5px 5px 0 #3cadf3; */
 }
 .listeMethode{
     text-align: left;
@@ -780,8 +808,7 @@ section{
 .blogContainer,.formationContainer,.newsContainer{
     width: 100%;
     height: auto;
-    background: rgb(153,88,50);
-    background: radial-gradient(circle, rgba(153,88,50,1) 0%, rgba(64,25,2,1) 100%);
+    background:#bfb3a3;
 }
 .blogContainer h3{
     font-size: 30px;

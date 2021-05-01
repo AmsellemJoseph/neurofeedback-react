@@ -18,7 +18,7 @@ const News = ()=>{
                 <a href={News0003} target='_blank' rel="noreferrer"><img src={News0003} alt='presse 03'/></a>
                 <a href={News0004} target='_blank' rel="noreferrer"><img src={News0004} alt='presse 03'/></a>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

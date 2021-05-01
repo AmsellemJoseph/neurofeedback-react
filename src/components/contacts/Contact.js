@@ -14,7 +14,7 @@ const Contact = () => {
         <div>
             <Nav />
             <div className='contactez-nous'>
-                <h2>Contactez nous!</h2>
+                {/* <h2>Contactez nous!</h2> */}
             </div>
             <div className='containerContact'>
                 <div className='containerInfoContact'>
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
             </div>
             <div className='vide'></div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

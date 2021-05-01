@@ -6,7 +6,7 @@ const Footer = ()=>{
     return (
         <div className='footer'>
             <div>
-            <img className="Banniere-footer" src={BanniereFooter} alt="Banniere du footer"/>
+            {/* <img className="Banniere-footer" src={BanniereFooter} alt="Banniere du footer"/> */}
             </div>
         </div>
     )

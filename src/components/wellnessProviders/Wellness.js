@@ -43,7 +43,7 @@ const [wellnessProvider] = useState([
         description1:`Après avoir poussé ma femme à se lancer dans l'aventure neuroptimal®, j'ai voulu à tout prix tester sur moi.`,
         description2:`Les résultats ont été pour le moins surprenants. Comme beaucoup j'avais des attentes particulières, pourtant, au bout de quelques sessions je me suis rendu compte, qu'il y avait des effets spectaculaires sur moi, mais pas du tout sur le point visé à la base, j'ai alors compris que cette méthode était aussi merveilleuse que surprenante.`,
         description3:`Quand ma femme a eu besoin que je prenne la relève quelques mois pour des raisons de santé, c'est naturellement que je me suis lancé dans l'aventure, non plus en tant que simple utilisateur de la méthode mais en tant qu'entraineur, et j'y ai tellement pris goût que je n'ai pas voulu lâcher quand elle a pu reprendre sa place.`,
-        description4:`yant voulu aller plus loin dans l'aide et l'accompagnement, je me suis également formé en pnl et imagination guidée par la transe (technique proche de l'hypnose ericksonienne), mais on revient vite a son premier amour.`,
+        description4:`Ayant voulu aller plus loin dans l'aide et l'accompagnement, je me suis également formé en pnl et imagination guidée par la transe (technique proche de l'hypnose ericksonienne), mais on revient vite a son premier amour.`,
         description5:`Je suis donc là, à votre disposition, pour vous accompagner, surtout que j'ai l'habitude de gérer des "atypiques".`,
     },
 ])
@@ -72,7 +72,7 @@ const [wellnessProvider] = useState([
                     />
                 )
             })}
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

@@ -23,27 +23,41 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const useStyles = makeStyles((theme) => ({
   divider: {
-    background: '#a7d5f2',
+    background: '#bfb3a3',
+    color:'#bfb3a3'
+  },
+  nav:{
+    background:'#11468c',
   },
   list: {
     width: 250,
+    background: '#11468c',
+    color:'#bfb3a3'
   },
   fullList: {
     width: 'auto',
+    background: '#11468c',
+    color:'#bfb3a3'
   },
   root: {
     flexGrow: 1,
+    background: '#11468c',
+    color:'#bfb3a3'
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    // background: '#11468c',
+    color:'#bfb3a3'
   },
   title: {
     flexGrow: 1,
-    display:'flex'
+    display:'flex',
+    background: '#11468c',
+    
   },
   logoNav:{
     marginRight:'15px',
-    paddingRight:'20px'
+    paddingRight:'20px',
   },
 }));
 
@@ -100,7 +114,7 @@ export default function ButtonAppBar() {
   ]);
 
   const list = (anchor) => (
-    <div
+    <div 
       className={clsx(classes.list, {
         [classes.fullList]: anchor === 'top' || anchor === 'bottom',
       })}
@@ -108,28 +122,27 @@ export default function ButtonAppBar() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List>
-        <Typography className='wellBar'>
+      <List classes={{ root: classes.nav }}>
+        <Typography className='wellBar' classes={{ root: classes.nav }} >
           Wellness Natanya
         </Typography>
         <Divider classes={{ root: classes.divider }} />
-        <Link style={{ textDecoration: 'none', color: '#a7d5f2' }} to='/home'>
+        <Link style={{ textDecoration: 'none', color: '#bfb3a3' }} to='/home' >
           <ListItem button key={'Accueil'}>
-            <ListItemIcon><FontAwesomeIcon icon={['fas', 'home']} /></ListItemIcon>
+            <ListItemIcon><FontAwesomeIcon icon={['fas', 'home']} style={{ textDecoration: 'none', color: '#bfb3a3' }} /></ListItemIcon>
             <ListItemText primary='Accueil' />
           </ListItem>
         </Link>
-
       </List>
 
       <Divider classes={{ root: classes.divider }} />
 
-      <List>
+      <List classes={{ root: classes.nav }}>
         {lienSite.map((lien, i) => {
           return (
-            <Link key={i} style={{ textDecoration: 'none', color: '#a7d5f2' }} to={lien.link}>
+            <Link key={i} style={{ textDecoration: 'none', color: '#bfb3a3' }} to={lien.link}>
               <ListItem button key={lien.titre}>
-                <ListItemIcon><FontAwesomeIcon icon={['fas', lien.font]} /></ListItemIcon>
+                <ListItemIcon><FontAwesomeIcon icon={['fas', lien.font]} style={{ textDecoration: 'none', color: '#bfb3a3' }} /></ListItemIcon>
                 <ListItemText primary={lien.titre} />
               </ListItem>
             </Link>
@@ -141,13 +154,61 @@ export default function ButtonAppBar() {
       
       <Divider classes={{ root: classes.divider }} />
 
-      <List>
-        <Link style={{ textDecoration: 'none', color: '#a7d5f2' }} to='/contact'>
+      <List classes={{ root: classes.nav }}>
+        <Link style={{ textDecoration: 'none', color: '#bfb3a3' }} to='/contact'>
           <ListItem button key={'Contact'}>
-            <ListItemIcon><FontAwesomeIcon icon={['fas', 'address-book']} /></ListItemIcon>
+            <ListItemIcon><FontAwesomeIcon icon={['fas', 'address-book']} style={{ textDecoration: 'none', color: '#bfb3a3' }} /></ListItemIcon>
             <ListItemText primary='Contact' />
           </ListItem>
         </Link>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
+      </List>
+      <List classes={{ root: classes.nav }}>
       </List>
     </div>
   );
@@ -157,9 +218,9 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <React.Fragment key={'right'}>
-        <AppBar position="static">
-          <Toolbar>
+      <React.Fragment key={'right'} >
+        <AppBar position="static" classes={{ root: classes.nav }}>
+          <Toolbar >
 
             <Typography variant="h6" className={classes.title}>
               <Logo classesName={classes.logoNav } />
@@ -172,7 +233,7 @@ export default function ButtonAppBar() {
             <IconButton onClick={toggleDrawer('right', true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
               <MenuIcon />
             </IconButton>
-            <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)}>
+            <Drawer anchor={'right'} open={state['right']} onClose={toggleDrawer('right', false)} className={classes.menuButton}>
               {list('right')}
             </Drawer>
           </Toolbar>

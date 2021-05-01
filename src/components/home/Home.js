@@ -77,14 +77,14 @@ const Home = () => {
                         return (
                             <Link className={description.className} key={i} to={description.link} style={{textDecoration:'none'}}>
                             <Descriptif titre={description.titre} explication={description.explication} />
-                            <FontAwesomeIcon icon={['fas', description.font]} style={{fontSize:'40px',margin:'20px',color:'#a7d5f2'}} />
+                            <FontAwesomeIcon icon={['fas', description.font]} style={{fontSize:'40px',margin:'20px',color:'#061359'}} />
                             </Link>
                         )
                     })}
                 </div>
             </div>
             {/* <Popup /> */}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

@@ -10,7 +10,7 @@ const Formation = ()=>{
         <div className='formationContainer'>
             <Nav/>
             <TextBase/>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }
