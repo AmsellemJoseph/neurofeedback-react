@@ -111,6 +111,11 @@ export default function ButtonAppBar() {
       titre: 'Blog',
       link: '/blog',
     },
+    {
+      font: 'images',
+      titre: 'Galerie',
+      link: '/galerie',
+    },
   ]);
 
   const list = (anchor) => (

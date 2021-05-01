@@ -27,6 +27,7 @@ function App() {
         <Route exact path="/blog" render = {()=>(<Blog/>)}/>
         <Route exact path="/formation" render = {()=>(<Formation/>)}/>
         <Route exact path="/news" render = {()=>(<News/>)}/>
+        {/* <Route exact path="/galerie" render = {()=>(<Galerie/>)}/> */}
         <Route path='*' render={()=>(<Redirect to='/accueil'/>)}/>
       </Switch>
       </div>

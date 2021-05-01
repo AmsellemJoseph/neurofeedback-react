@@ -352,8 +352,8 @@ html{
 .DescriptifMainContainer{
     display: flex;
     width: 100%;
-    height: auto;
-    background:#bfb3a3;
+    height: 100vh;
+    background:url('./assets/images/home.jpeg') no-repeat center/cover;
 
 }
 

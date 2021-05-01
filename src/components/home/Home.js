@@ -66,6 +66,13 @@ const Home = () => {
             explication: "Prenez contact avec nous pour plus d'informations ou pour prendre rendez-vous.",
             link:'/contact',
         },
+        {
+            className: 'containerDescriptifDroite',
+            font: 'address-book',
+            titre: 'Galerie',
+            explication: "Prenez contact avec nous pour plus d'informations ou pour prendre rendez-vous.",
+            link:'/galerie',
+        },
         
     ])
     return (
@@ -76,8 +83,10 @@ const Home = () => {
                     {description.map((description, i) => {
                         return (
                             <Link className={description.className} key={i} to={description.link} style={{textDecoration:'none'}}>
-                            <Descriptif titre={description.titre} explication={description.explication} />
-                            <FontAwesomeIcon icon={['fas', description.font]} style={{fontSize:'40px',margin:'20px',color:'#061359'}} />
+                            <Descriptif titre={description.titre}
+                            //  explication={description.explication}
+                              />
+                            {/* <FontAwesomeIcon icon={['fas', description.font]} style={{fontSize:'40px',margin:'20px',color:'#061359'}} /> */}
                             </Link>
                         )
                     })}
