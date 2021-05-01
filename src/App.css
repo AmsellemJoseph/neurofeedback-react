@@ -799,7 +799,7 @@ section{
 
 .blogContainer h2{
     padding-top: 25px;
-    color: #3cadf3;
+    color: #11468c;
     font-size: 40px;
     text-align: center;
     text-decoration: underline;
@@ -817,13 +817,13 @@ section{
 
 .blogContainer p{
     text-align: justify;
-    font-family: 'Dancing Script';
+    font-family: 'New Tegomin';
     font-size: 26px;
     font-style: italic;
 }
 
 .textBase,.textBase a{
-    color: #a7d5f2;
+    color: #11468c;
     width: 70%;
     margin: 20px auto;
 }

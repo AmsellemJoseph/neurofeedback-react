@@ -11,7 +11,7 @@ const News = ()=>{
     return(
         <div className='newsContainer'>
             <Nav/>
-            <h2>ARTICLES DE PRESSE</h2>
+            {/* <h2>ARTICLES DE PRESSE</h2> */}
             <div className='imgContainer'>
                 <a href={News0001} target='_blank' rel="noreferrer"><img src={News0001} alt='presse 01'/></a>
                 <a href={News0002} target='_blank' rel="noreferrer"><img src={News0002} alt='presse 02'/></a>

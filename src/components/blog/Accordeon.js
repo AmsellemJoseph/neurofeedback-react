@@ -10,7 +10,21 @@ const useStyles = makeStyles((theme) => ({
     width: '90%',
     margin:'10px auto',
     height:'auto',
-    borderRadius:'5px'
+    borderRadius:'5px',
+  },
+  head:{
+    display:'flex',
+    justifyContent:'space-between',
+    background: '#11468c',
+    color:'#bfb3a3',
+    alignItems:'center'
+  },
+  head2:{
+    display:'flex',
+    justifyContent:'space-between',
+    background: '#e5ded5',
+    color:'#11468c',
+    alignItems:'center'
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -24,16 +38,35 @@ export default function SimpleAccordion(props) {
   return (
     <div className={classes.root}>
       <Accordion>
-        <AccordionSummary style={{backgroundColor:'#401902',border:'1px solid #3cadf3'}}
-          expandIcon={<ExpandMoreIcon style={{color:"#3cadf3"}}/>}
+        <AccordionSummary classes={{ root: classes.head }} 
+          expandIcon={<ExpandMoreIcon style={{color:"#bfb3a3"}}/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
           <h3>{props.titre}</h3>
         </AccordionSummary>
-        <AccordionDetails style={{borderTop:'1px dotted #3cadf3',margin:'auto'}}>
+        <AccordionDetails classes={{ root: classes.head2 }} style={{borderTop:'1px dotted #bfb3a3',margin:'auto'}}>
           <Typography style={{width:'100%'}}>
-            <p>{props.texte}</p>
+            <p>{props.texte1}</p>
+            <p>{props.texte2}</p>
+            <p>{props.texte3}</p>
+            <p>{props.texte4}</p>
+            <p>{props.texte5}</p>
+            <p>{props.texte6}</p>
+            <p>{props.texte7}</p>
+            <p>{props.texte8}</p>
+            <p>{props.texte9}</p>
+            <p>{props.texte10}</p>
+            <p>{props.texte11}</p>
+            <p>{props.texte12}</p>
+            <p>{props.texte13}</p>
+            <p>{props.texte14}</p>
+            <p>{props.texte15}</p>
+            <p>{props.texte16}</p>
+            <p>{props.texte17}</p>
+            <p>{props.texte18}</p>
+            <p>{props.texte19}</p>
+            <p>{props.texte20}</p>
           </Typography>
         </AccordionDetails>
       </Accordion>
