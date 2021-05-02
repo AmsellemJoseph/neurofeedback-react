@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Nav from '../NavBar/Nav';
 import Accordeon from './Accordeon'
 import Footer from '../footer/Footer';
+import Ecrivez from '../material-ui/Ecrivez-nous'
 
 const Blog = () => {
 
@@ -20,6 +21,7 @@ const Blog = () => {
     console.log(getBlog);
     return (
         <div className="blogContainer">
+            <Ecrivez/>
             <Nav />
             <h2>BLOG</h2>
             {getBlog.reverse().map((blog, i) => {

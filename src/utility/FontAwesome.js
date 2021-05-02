@@ -15,6 +15,8 @@ import {faAddressBook as fasAddressBook} from '@fortawesome/free-solid-svg-icons
 import {faHeart as fasHeart} from '@fortawesome/free-solid-svg-icons';
 import {faHandPointRight as fasHandPointRight} from '@fortawesome/free-solid-svg-icons';
 import {faImages as fasImages} from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope as fasEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faComments as fasComments} from '@fortawesome/free-solid-svg-icons';
 
 library.add(
     fasPortrait,
@@ -29,6 +31,8 @@ library.add(
     fasHeart,
     fasHandPointRight,
     fasImages,
+    fasEnvelope,
+    fasComments,
 
     // more icons go here
 );

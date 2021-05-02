@@ -5,6 +5,7 @@ import Popup from './Popup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Descriptif from './Descriptif'
 import { Link } from 'react-router-dom'
+import Ecrivez from '../material-ui/Ecrivez-nous'
 
 const Home = () => {
 
@@ -94,6 +95,7 @@ const Home = () => {
             </div>
             {/* <Popup /> */}
             {/* <Footer /> */}
+            <Ecrivez/>
         </div>
     )
 }

@@ -24,6 +24,7 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Ecrivez from '../material-ui/Ecrivez-nous'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -107,6 +108,7 @@ const Methode = (props) => {
     return (<div>
         <CssBaseline />
         <Nav />
+            <Ecrivez/>
         <Toolbar id="back-to-top-anchor" />
         <div className='articleContainer'>
             <div className='article'>
@@ -179,11 +181,11 @@ const Methode = (props) => {
                         </div>
 
                         <p>Et ressentir tellement d'autres bienfaits qu'on ne saurait dresser une liste complète.</p>
-                        <ScrollTop >
+                        {/* <ScrollTop > */}
                             <Fab color="secondary" size="small" aria-label="scroll back to top" style={{ textAlign: 'right', bottom: '0px', right: '0px', background: '#3cadf3', color: '#401902' }}>
-                                <KeyboardArrowUpIcon />
+                            <Ecrivez/>
                             </Fab>
-                        </ScrollTop>
+                        {/* </ScrollTop> */}
                     </Card>
                 </section>
                 <img className='methodeImg' src={Fauteuil} alt='fauteil' />
@@ -239,6 +241,7 @@ const Methode = (props) => {
                 </section>
                 <img className='methodeImg' src={Saute} alt='personne qui saute' />
             </div>
+        
         </div>
         {/* <Footer /> */}
 
