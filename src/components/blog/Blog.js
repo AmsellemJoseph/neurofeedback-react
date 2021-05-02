@@ -18,7 +18,6 @@ const Blog = () => {
         blog();
     }, [])
     
-    console.log(getBlog);
     return (
         <div className="blogContainer">
             <Ecrivez/>
