@@ -28,7 +28,7 @@ const Home = () => {
         {
             className: 'containerDescriptifGauche',
             font: 'newspaper',
-            titre: 'Retrouvez nous dans la presse.',
+            titre: 'Retrouvez nous dans la presse',
             explication: 'Voici differents articles que nous avons fait à propos de la méthode.',
             link:'/news',
         },

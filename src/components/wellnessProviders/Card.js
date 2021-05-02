@@ -41,7 +41,7 @@ export default function SimpleAccordion(props) {
              <p><img src={props.drapeau} alt='drapeau du pays'/> {props.pays}</p>
              <div className='contact'>
              {props.whatsapp?(<p><a style={{cursor:'pointer',color:"#11468c"}} href={props.whatsapp} target='_blank' rel="noreferrer">Whattsapp</a></p>):null}
-             <p><a style={{cursor:'pointer',color:"#11468c"}} href={props.tel}>{props.telAffiche}</a></p>
+             {props.tel?(<p><a style={{cursor:'pointer',color:"#11468c"}} href={props.tel}>{props.telAffiche}</a></p>):<p>{props.telAffiche}</p>}
              </div>
              </div>
          </div>

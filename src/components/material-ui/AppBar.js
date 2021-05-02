@@ -93,7 +93,7 @@ export default function ButtonAppBar() {
     },
     {
       font: 'newspaper',
-      titre: 'Retrouvez nous dans la presse.',
+      titre: 'Retrouvez nous dans la presse',
       link: '/news',
     },
     {
