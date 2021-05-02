@@ -24,8 +24,8 @@ export default function SimpleAccordion(props) {
   return (
     <div className={classes.root}>
       <Accordion>
-        <AccordionSummary style={{backgroundColor:'#401902'}}
-          expandIcon={<ExpandMoreIcon style={{color:"#3cadf3"}}/>}
+        <AccordionSummary style={{backgroundColor:'#bfb3a3'}}
+          expandIcon={<ExpandMoreIcon style={{color:"#11468c"}}/>}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -40,13 +40,13 @@ export default function SimpleAccordion(props) {
              <h2>{props.adresse}</h2>
              <p><img src={props.drapeau} alt='drapeau du pays'/> {props.pays}</p>
              <div className='contact'>
-             {props.whatsapp?(<p><a style={{cursor:'pointer',color:"#a7d5f2"}} href={props.whatsapp} target='_blank' rel="noreferrer">Whattsapp</a></p>):null}
-             <p><a style={{cursor:'pointer',color:"#a7d5f2"}} href={props.tel}>{props.telAffiche}</a></p>
+             {props.whatsapp?(<p><a style={{cursor:'pointer',color:"#11468c"}} href={props.whatsapp} target='_blank' rel="noreferrer">Whattsapp</a></p>):null}
+             <p><a style={{cursor:'pointer',color:"#11468c"}} href={props.tel}>{props.telAffiche}</a></p>
              </div>
              </div>
          </div>
         </AccordionSummary>
-        <AccordionDetails style={{borderTop:'1px dotted #3cadf3',margin:'auto'}}>
+        <AccordionDetails style={{borderTop:'1px dotted #11468c',background:'#bfb3a3',margin:'auto'}}>
           <Typography style={{width:'100%'}}>
             <div className='cardDetails'>
             <h2 style={{textAlign:'center'}}>Mon histoire</h2>

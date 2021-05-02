@@ -12,7 +12,6 @@ const Blog = () => {
             const URL = `https://www.wellness-israel.net/api/Blog/getBlog`;
             const res = await fetch(URL);
             const response = await res.json()
-            console.log(response);
             setBlog(response.Table)
         }
         blog();

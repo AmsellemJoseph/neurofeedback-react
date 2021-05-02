@@ -273,14 +273,15 @@ html{
     text-align: left;
 }
 .cardDetails h2{
-    color: #3cadf3;
+    color: #11468c;
     font-size: 35px;
     text-decoration: underline;
 }
 .cardDetails p{
     font-size: 20px;
     margin: 15px 0;
-    text-indent: 20px
+    text-indent: 20px;
+    color: #11468c;
 }
 
 @media screen and (max-width:890px) {
@@ -457,7 +458,7 @@ html{
     margin: 20px auto;
     width: 50%;
     height: 175px;
-    background: #401902;
+    background: #bfb3a3;
 }
 .designBackCard{
     border-radius: 5px;
@@ -466,7 +467,7 @@ html{
     top: 0px;
     height: 175px;
     width: 230px;
-    background: #3cadf3;
+    background: #11468c;
     clip-path: polygon(0% 0%, 50% 0, 25% 50%, 50% 100%, 0% 100%);
 }
 .photoCard{
@@ -477,9 +478,9 @@ html{
     left: 25px;
     width: 150px;
     height: 150px;
-    background: #734226;
+    background: #bfb3a3;
     border-radius: 50%;
-    box-shadow: 19px 0px 86px #3cadf3;
+    box-shadow: 19px 0px 86px #11468c;
     /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
 
 }
@@ -503,16 +504,20 @@ html{
     font-size: 25px;
     margin-bottom: 15px;
     text-decoration: underline;
+    color: #11468c;
 }
 .Infos h3{
     font-size: 15px;
     margin-bottom: 20px;
+    color: #11468c;
 }
 .Infos h2{
     font-size: 17px;
+    color: #11468c;
 }
 .Infos p{
     font-size: 17px;
+    color: #11468c;
 }
 .Infos img{
     margin-right: 20px;
@@ -534,7 +539,7 @@ html{
         margin: 20px auto;
         width: 70%;
         height: 175px;
-        background: #401902;
+
     }
 }
 @media screen and (max-width:780px) {
@@ -547,7 +552,7 @@ html{
         margin: 20px auto;
         width: 100%;
         height: 175px;
-        background: #401902;
+
     }
 }
 
@@ -556,7 +561,7 @@ html{
         display: flex;
     justify-content: flex-end;
         margin: 20px auto;
-        background: #401902;
+
     }
     
     
@@ -594,6 +599,31 @@ html{
         margin: 10px 10px;
     }
 }
+@media screen and (max-width:480px) {
+    .photoCard{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        width: 100px;
+        height: 100px;
+        background: #734226;
+        border-radius: 50%;
+
+        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    
+    }
+    
+    .photoCard img{
+        border-radius: 50%;
+        text-align: center;
+
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+}
 @media screen and (max-width:450px) {
     .photoCard{
         display: flex;
@@ -605,7 +635,7 @@ html{
         height: 100px;
         background: #734226;
         border-radius: 50%;
-        box-shadow: 19px 0px 86px #3cadf3;
+
         /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
     
     }
@@ -613,7 +643,6 @@ html{
     .photoCard img{
         border-radius: 50%;
         text-align: center;
-
         width: 100px;
         height: 100px;
         background-size: cover;
@@ -625,11 +654,11 @@ html{
         top: 0px;
         height: 175px;
         width: 150px;
-        background: #3cadf3;
+
         clip-path: polygon(0% 0%, 50% 0, 25% 50%, 50% 100%, 0% 100%);
     }
 }
-@media screen and (max-width:380px) {
+@media screen and (max-width:400px) {
     .photoCard{
         display: flex;
         justify-content: center;
@@ -640,7 +669,7 @@ html{
         height: 75px;
         background: #734226;
         border-radius: 50%;
-        box-shadow: 19px 0px 86px #3cadf3;
+
         /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
     
     }
@@ -652,6 +681,57 @@ html{
         width: 75px;
         height: 75px;
         background-size: cover;
+    }
+}
+@media screen and (max-width:370px) {
+    .photoCard{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 50px;
+        height: 50px;
+        background: #734226;
+        border-radius: 50%;
+
+        /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+        
+    
+    }
+    
+    .photoCard img{
+        border-radius: 50%;
+        text-align: center;
+
+        width: 75px;
+        height: 75px;
+        background-size: cover;
+    }
+    .Infos h4{
+        font-size: 16px;
+        margin-bottom: 15px;
+        text-decoration: underline;
+    }
+    .Infos h3{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .Infos h2{
+        font-size: 13px;
+    }
+    .Infos p{
+        font-size: 10px;
+    }
+    .Infos img{
+        margin-right: 20px;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+    }
+    .contact p{
+        margin: 10px 10px;
     }
 }
 @media screen and (max-width:329px) {
@@ -665,7 +745,7 @@ html{
         height: 65px;
         background: #734226;
         border-radius: 50%;
-        box-shadow: 19px 0px 86px #3cadf3;
+
         /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
     
     }
