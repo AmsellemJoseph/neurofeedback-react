@@ -33,7 +33,7 @@ const TextBase = () => {
             <p>Jenny, votre facilitatrice, vous aidera à obtenir votre certification officielle neuroptimal ® de l'institut ZENGAR ®, la formation bien que très courte sera complète et je vous proposerai un accompagnement et un suivi qui ira bien au-delà de l'obtention de votre certification.</p>
 
             <p>Retrouvez les dates de formations sur le site officiel:</p>
-            <a href='https://www.neuroptimal.com' target='_blank' rel="noreferrer">www.neuroptimal.com</a>
+            <a href='https://neuroptimal.com/member/jennifer-amsellem-2/' target='_blank' rel="noreferrer">www.neuroptimal.com</a>
             <p>N'oubliez pas de choisir Jenny😝. (Jennifer Amsellem)</p>
             <p>A très vite.</p>
         </div>

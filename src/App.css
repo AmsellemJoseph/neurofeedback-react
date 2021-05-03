@@ -401,9 +401,6 @@ html{
     .infoFooter a, .telFooter a{
         font-size: 12px;
     }
-    .logoFooter img{
-
-    }
 }
 @media screen and (max-width:570px) {
     .adresseFooter,.telFooter{
@@ -577,7 +574,7 @@ html{
     position: absolute;
     top: 12.5px;
     left: 25px;
-    width: 150px;
+    width: 125px;
     height: 150px;
     background: #bfb3a3;
     border-radius: 50%;
@@ -589,10 +586,10 @@ html{
 .photoCard img{
     border-radius: 50%;
     text-align: center;
-    width: 150px;
-    overflow: hidden;
+    width: 125px;
+    /* overflow: hidden; */
     height: 150px;
-    background-size: contain;
+    /* background-size: contain; */
 }
 .Infos{
     /* position: absolute; */
@@ -708,7 +705,7 @@ html{
         position: absolute;
         top: 35px;
         left: 0px;
-        width: 100px;
+        width: 75px;
         height: 100px;
         border-radius: 50%;
 
@@ -732,7 +729,7 @@ html{
         position: absolute;
         top: 35px;
         left: 0px;
-        width: 100px;
+        width: 75px;
         height: 100px;
         border-radius: 50%;
 
@@ -743,7 +740,7 @@ html{
     .photoCard img{
         border-radius: 50%;
         text-align: center;
-        width: 100px;
+        width: 75px;
         height: 100px;
         background-size: cover;
     }
@@ -765,7 +762,7 @@ html{
         position: absolute;
         top: 50px;
         left: 0px;
-        width: 75px;
+        width: 50px;
         height: 75px;
         border-radius: 50%;
 
@@ -777,7 +774,7 @@ html{
         border-radius: 50%;
         text-align: center;
 
-        width: 75px;
+        width: 50px;
         height: 75px;
         background-size: cover;
     }
@@ -789,7 +786,7 @@ html{
         position: absolute;
         top: 50px;
         left: 0px;
-        width: 75px;
+        width: 50px;
         height: 75px;
         border-radius: 50%;
 
@@ -802,7 +799,7 @@ html{
         border-radius: 50%;
         text-align: center;
 
-        width: 75px;
+        width: 50px;
         height: 75px;
         background-size: cover;
     }
@@ -839,7 +836,7 @@ html{
         position: absolute;
         top: 60px;
         left: 0px;
-        width: 65px;
+        width: 55px;
         height: 65px;
         border-radius: 50%;
 
@@ -851,7 +848,7 @@ html{
         border-radius: 50%;
         text-align: center;
 
-        width: 65px;
+        width: 55px;
         height: 65px;
         background-size: cover;
     }
@@ -864,6 +861,15 @@ html{
 }
 .article{
     text-align: justify;
+    -webkit-hyphens: auto;
+
+ -moz-hyphens: auto;
+
+ -ms-hyphens: auto;
+
+ -o-hyphens: auto;
+
+ hyphens: auto;
     margin: auto;
     width: 80%;
     color: #11468c;
@@ -983,7 +989,12 @@ section{
     text-decoration: underline;
     margin-bottom: 50px;
 }
-.blogContainer,.formationContainer,.newsContainer{
+.newsContainer,.blogContainerMain,.contactContainerMain{
+    width: 100%;
+    height: 100vh;
+    background:#bfb3a3;
+}
+.blogContainer,.formationContainer{
     width: 100%;
     height: auto;
     background:#bfb3a3;
@@ -997,6 +1008,7 @@ section{
 }
 
 .blogContainer p{
+    
     text-align: justify;
     font-family: 'New Tegomin';
     font-size: 26px;
@@ -1004,6 +1016,16 @@ section{
 }
 
 .textBase,.textBase a{
+    text-align: justify;
+    -webkit-hyphens: auto;
+
+ -moz-hyphens: auto;
+
+ -ms-hyphens: auto;
+
+ -o-hyphens: auto;
+
+ hyphens: auto;
     color: #11468c;
     width: 70%;
     margin: 20px auto;

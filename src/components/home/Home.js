@@ -94,7 +94,7 @@ const Home = () => {
                 </div>
             </div>
             {/* <Popup /> */}
-            {/* <Footer /> */}
+            <Footer />
             <Ecrivez/>
         </div>
     )

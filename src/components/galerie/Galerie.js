@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../NavBar/Nav'
+import Footer from '../footer/Footer'
 import Ecrivez from '../material-ui/Ecrivez-nous'
 import image0001 from '../../assets/images/image/0001.jpg'
 import image0002 from '../../assets/images/image/0002.jpg'
@@ -32,6 +33,7 @@ const Galerie = () => {
              <a href={image0010} target='_blank' rel='noreferrer'><img src={image0010} alt="photo de galerie"/></a>
              <a href={image0011} target='_blank' rel='noreferrer'><img src={image0011} alt="photo de galerie"/></a>
          </div>
+         <Footer/>
      </div>
  )  
 }

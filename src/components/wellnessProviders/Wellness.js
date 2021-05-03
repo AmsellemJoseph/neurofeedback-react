@@ -15,6 +15,9 @@ import Benaim from '../../assets/Wellness/Benaim.jpg'
 import Berrebi from '../../assets/Wellness/Berrebi.jpg'
 import Nehama from '../../assets/Wellness/Nehama.jpg'
 import Simha from '../../assets/Wellness/Simha.jpg'
+import Valerie from '../../assets/Wellness/Valerie.jpg'
+import Dina from '../../assets/Wellness/Dina.jpg'
+import Levana from '../../assets/Wellness/Levana.jpg'
 
 
 import Israel from '../../assets/images/20x15/il.png'
@@ -115,26 +118,25 @@ const Wellness = () => {
             photo:Kespi,
             nom:'Jennifer Kespi',
             status:'Wellness Provider',
-            adresse:'Kfar yona/Natanya(Domicile)',
+            adresse:'Kfar yona/Natanya-Dom',
             drapeau:Israel,
             pays:' Israel',
             whatsapp:'',
             tel:'',
             telAffiche:'0586908752',
-            description1:`Lorsque nous avons fait notre alya, il y a 5 ans maintenant, notre fils aîné de 11 ans a l’époque avait très mal vécu ce changement de vie, alors qu'il avait fait en France un redoublement profitable et qu'il remontait ses notes et reprenait confiance en lui.
-            Cette alya a été pour lui un véritable tsunami qui avait détruit sa vie.`,
-            description2:`Je ne reconnaissais plus mon fils, lui qui était si joyeux, bout en train ...Il passait toutes ses journées à se plaindre, à pleurer et crier  : « je suis français »
-            Il n'arrivait pas à s’intégrer ni à se faire des amis...
-            Au lieu de cela, il cumulait les disputes et les bagarres.
-            C’était très dur pour moi de voir mon fils si malheureux et si mal dans sa peau.
-            Je culpabilisais de ce choix que nous avions imposé à nos enfants, malgré la longue préparation.`,
-            description3:`Lui qui avait déjà eu un  parcours scolaire semé d'embûches, mais pour lequel je me démenais afin de lui apporter l’aide dont il avait besoin, grâce aux différents intervenants comme la psychomotricité, l’orthophoniste ou encore l’accompagnement d’une  phsychologue. Tous l’ont aidé et l’ont acompagné à leur manière mais là, je savais qu'il fallait autre chose car il en avait assez de voir toutes sortes de spécialistes pour enfant, qui lui donnaient l'impression d’être : «pas normal».`,
-            description4:`J'ai donc cherché quelque chose qui puisse l’aider sans pour autant avoir besoin de faire de test ou de lui demander un effort particulier.
-            Après de longues recherches, je finis par découvrir le dynamical neurofeedback® qui correspondait tout à fait à mes attentes et dont je découvrais les résultats des plus surprenants.
-            J’ai toujours pensé que les épreuves de mon fils, étaient la mission qu'Hashem m’avait donnée car j'étais capable de l'aider à les surmonter .`,
-            description5:`Tout au long des sessions d'entraînement neuroptimal®, je vois mon fils retrouver, au fur et à mesure, le sourire, la motivation, ses ambitions... et je le surprends à parler et même à chanter en hébreu sans faute. Quand les tensions à la maison s’atténuent pour laisser place à des rires, des joies et de la complicité, que les bêtises faitent sont assumées et que j'entends des excuses prononcées spontanément; je comprends alors que La méthode neuroptimal® a changé la vie de mon fils mais aussi celle de notre famille. Et je comprends alors que ma mission d'aider mon fils, est en faite celle d'aider tous les enfants et toutes les mamans qui sont perdus, qui n'arrivent plus à avancer sereinement et qui ont besoin d'un coup de pouce au niveau scolaire, au niveau relationnel, ou affectif...
-            Ma mission: vous aider à rendre votre vie plus belle et plus sereine.
+            description1:`Comme pour beaucoup de famille notre alyah, il y a 5 ans, a été un peu difficile pour la famille; mais particulièrement pour mon fils de 11 ans.
+            Lui qui avait surmonté  ses difficultés d'apprentissage en France, ne supportait pas ce changement, trop radical, et avait beaucoup de mal à s'intégrer.`,
+            description2:`Il avait perdu sa joie de vivre, était de plus en plus bagarreur, on sentait réellement et son mal être, et nous culpabilisions beaucoup de l'avoir entraîné dans cette situation. 
+            Bien que notre alyah avait été bien préparée, il semblait que ce n'était pas suffisant.
+            En France, grâce à l'aide de spécialistes, en psychologie, psychomotricité et orthophonie, il avait énormément progressé, mais on sentait une rechute à cause de ses difficultés d'intégration. En plus, il ne voulait pas se sentir davantage différent que ce qu'il était déjà en tant que français, en courant les spécialistes à droite et à gauche. Ça aurait augmenté ses difficultés.  `,
+            description3:`J'ai donc cherché quelque chose qui l'aiderait sans effort particulier. 
+            Après de longues recherches, je finis par découvrir le dynamical neurofeedback®️ qui correspondait à toutes mes attentes et dont je découvrais les résultats des plus surprenants. 
             `,
+            description4:`J'ai toujours su que les épreuves qu'on reçoit ont un but en soit, et que si Hashem me donnait la mission d'aider mon fils, je pouvais le faire et ça aurai un sens.
+            Et j'en ai eu la preuve.
+            Au fur et à mesure des entraînements neuroptimal®️; je voyais mon fils retrouver sa motivation; il chantait, et même en hébreu. Et plus mon fils retrouvait sa joie de vivre plus la famille retrouvait son équilibre. `,
+            description5:`C'est ainsi que j'ai compris que cette étape de ma vie était la pour me faire découvrir cette méthode et à mon tour aider les enfants, les mamans, perdues dans le tourbillon de la vie, a retrouver la sérénité.
+            Aujourd'hui je suis là pour vous accompagner vers une vie plus belle.`,
         },
         {
             id:7,
@@ -268,6 +270,71 @@ const Wellness = () => {
             description4:``,
             description5:``,
         },
+        {
+            id:14,
+            photo:Dina,
+            nom:'Dina Azria ',
+            status:'Wellness Provider',
+            adresse:'Jérusalem',
+            drapeau:Israel,
+            pays:' Israel',
+            whatsapp:'',
+            tel:'',
+            telAffiche:'0542851397',
+            description1:`J'ai découvert le Neurofeedback suite à la perte de ma fille il y a 9 ans partie suite à une crise d'épilepsie. `,
+            description2:`J'ai cherché comment on peut espacer et atténuer les crises et je suis tombée sur cette méthode qui marche aux USA depuis près d'une vingtaine d'années et je me suis dit : "c'est ça que je veux faire !!".`,
+            description3:`Je veux aider les gens à aller mieux à devenir la meilleure version d'eux même. 
+            J'ai grâce à D... d'excellents résultats avec tous mes clients et j'encourage quiconque à venir tester la méthode pour de sentir plus en phase, plus résilient et plus heureux de vivre chaque jour comme un nouveau challenge.`,
+            description4:`Facebook: dina-neurofeedback Jérusalem `,
+            description5:`Insta: https://instagram.com/dina_neurofeedback?igshid=nxuvfw0klr3h
+            Site https://nadineazria.wixsite.com/neurofeedback`,
+        },
+        {
+            id:15,
+            photo:Valerie,
+            nom:'Valerie Cohen',
+            status:'Wellness Provider',
+            adresse:'Tel Aviv',
+            drapeau:Israel,
+            pays:' Israel',
+            whatsapp:'',
+            tel:'',
+            telAffiche:'0537086836',
+            description1:`Mon nom est Valérie Cohen, Parisienne d’origine ayant posé ses valises à Tel-Aviv depuis bientôt 5 ans.`,
+            description2:`Ma fille est âgée de 24 ans, elle a été diagnostiquée autiste à l'âge de 6 ans . Lorsque le diagnostic a été posé, tout autour de moi, affirmait que c'était irréversible, on ne guérit pas de l'autisme.
+
+            J'ai subi les découragements et le désespoir. Mais, je n'ai pas baissé les bras, je n'ai eu de cesse de m'informer sur l'autisme, tout le temps, j'ai tout tenté et à chaque fois avec le même espoir. Mais face à l'impossible on ne peut attendre que le miracle.`,
+            description3:`Dans chaque thérapie,  j'ai vu et compris qu'une petite parcelle du miracle tant attendu s'offrait à nous, à elle en particulier. Ces parcelles ont été suffisantes pour avoir envie de continuer pour elle.
+
+            C'est à elle que  je dois d'avoir découvert le NeurOptimal® Dynamic grâce auquel elle a pu réussir son BAC avant de faire son alya.
+            
+             Aujourd’hui, Laura est heureuse et épanouie et a fini son service militaire dans l'armée de l'air israélienne en tant que maître chien. Elle travaille aujourd'hui en cyber après une certification dans le domaine et, avoir été déclarée par l'armée avec un " simple "  médium ADHD ( trouble de l'attention) . `,
+            description4:`Cette histoire est la mienne, elle fait partie de mon parcours, mais je ne me suis pas arrêtée à Laura, des centaines de témoignages sont arrivés à moi et  attestent les résultats remarquables de NeurOptimal® Dynamic sur notre comportement, sur notre vie, nos relations, notre bien-être et notre santé.
+
+            Mon propre père a également  réussi à se débarrasser de ses acouphènes qui ne lui laissaient pas de répit grâce à cette même thérapie. 
+            
+            C'est ainsi qu'au moment de faire mon alya , j'ai choisi de promouvoir cet entraînement cérébral et d'en faire mon métier. 
+            
+            Combien de personnes qui vivaient avec des insomnies, des maux de têtes récurrent sans origine médicale,  troubles alimentaires, toc, crises d'angoisses, crises d'anxiété, ont réussi à les  contourner grâce au NeurOptimal® Dynamic et peuvent attester d'une vie optimale.`,
+            description5:`Je vous accueille tous les jours dans mon cabinet de Neuro Feedback situé au cœur de la ville blanche. À très vite !`,
+        },
+        {
+            id:16,
+            photo:Levana,
+            nom:'Levanah Éden',
+            status:'Wellness Provider',
+            adresse:'Raanana-Dom & environs',
+            drapeau:Israel,
+            pays:' Israel',
+            whatsapp:'',
+            tel:'',
+            telAffiche:'0503535487',
+            description1:`Je suis également coach de vie.`,
+            description2:``,
+            description3:``,
+            description4:``,
+            description5:``,
+        },
     ])
 
 
@@ -295,7 +362,7 @@ const Wellness = () => {
                     />
                 )
             })}
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     )
 }

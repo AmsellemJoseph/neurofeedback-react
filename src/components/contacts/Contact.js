@@ -12,6 +12,7 @@ const Contact = () => {
 
     return (
         <div>
+        <div className='contactContainerMain'>
             <Nav />
             <div className='contactez-nous'>
                 {/* <h2>Contactez nous!</h2> */}
@@ -48,8 +49,9 @@ const Contact = () => {
                     <Map />
                 </div>
             </div>
-            <div className='vide'></div>
-            {/* <Footer /> */}
+            {/* <div className='vide'></div> */}
+            </div>
+            <Footer />
         </div>
     )
 }

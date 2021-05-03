@@ -1,5 +1,6 @@
 import React from 'react'
 import Nav from '../NavBar/Nav';
+import Footer from '../footer/Footer'
 import Ecrivez from '../material-ui/Ecrivez-nous'
 import ReactPlayer from 'react-player'
 import Video0001 from '../../assets/videos/001.mp4'
@@ -35,6 +36,7 @@ const Video = () => {
                     <ReactPlayer url={Video0006} width='300px' height='300px' controls='true' />
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

@@ -12,7 +12,7 @@ const Formation = ()=>{
             <Nav/>
             <TextBase/>
             <Ecrivez/>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     )
 }
