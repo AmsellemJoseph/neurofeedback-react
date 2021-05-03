@@ -19,7 +19,7 @@ const Home = () => {
             link:'/methode',
         },
         {
-            className: 'containerDescriptifDroite',
+            className: 'containerDescriptifGauche',
             font: 'users',
             titre: 'Vos Wellness Providers',
             explication: 'Trouvez le wellness provider le plus proche de chez vous.',
@@ -33,7 +33,7 @@ const Home = () => {
             link:'/news',
         },
         {
-            className: 'containerDescriptifDroite',
+            className: 'containerDescriptifGauche',
             font: 'video',
             titre: 'Nos vidéos',
             explication: 'Une séléction de nos interviews et autres explications.',
@@ -47,7 +47,7 @@ const Home = () => {
             link:'/formation',
         },
         {
-            className: 'containerDescriptifDroite',
+            className: 'containerDescriptifGauche',
             font: 'rss',
             titre: 'Blog',
             explication: "Restez informé sur l'actualité à travers de nombreux posts.",
@@ -63,16 +63,16 @@ const Home = () => {
         {
             className: 'containerDescriptifGauche',
             font: 'address-book',
-            titre: 'Contact',
-            explication: "Prenez contact avec nous pour plus d'informations ou pour prendre rendez-vous.",
-            link:'/contact',
-        },
-        {
-            className: 'containerDescriptifDroite',
-            font: 'address-book',
             titre: 'Galerie',
             explication: "Prenez contact avec nous pour plus d'informations ou pour prendre rendez-vous.",
             link:'/galerie',
+        },
+        {
+            className: 'containerDescriptifGauche',
+            font: 'address-book',
+            titre: 'Contact',
+            explication: "Prenez contact avec nous pour plus d'informations ou pour prendre rendez-vous.",
+            link:'/contact',
         },
         
     ])
@@ -87,7 +87,7 @@ const Home = () => {
                             <Descriptif titre={description.titre}
                             //  explication={description.explication}
                               />
-                            {/* <FontAwesomeIcon icon={['fas', description.font]} style={{fontSize:'40px',margin:'20px',color:'#061359'}} /> */}
+                            {/* <FontAwesomeIcon icon={['fas', description.font]} style={{fontSize:'20px',margin:'20px',color:'#061359'}} /> */}
                             </Link>
                         )
                     })}

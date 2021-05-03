@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         margin: '10px 0',
         background: '#e5ded5',
         // boxShadow: "5px 5px 5px 0 #3cadf3",
-        border: '1px solid #11468c',
+        // border: '1px solid #11468c',
     },
     Btnroot: {
         position: 'fixed',
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent:'center',
         alignItems:'center',
         background: '#e5ded5',
-        border: '1px solid #11468c',
+        // border: '1px solid #11468c',
 
     }
 }));
@@ -182,9 +182,9 @@ const Methode = (props) => {
 
                         <p>Et ressentir tellement d'autres bienfaits qu'on ne saurait dresser une liste complète.</p>
                         {/* <ScrollTop > */}
-                            <Fab color="secondary" size="small" aria-label="scroll back to top" style={{ textAlign: 'right', bottom: '0px', right: '0px', background: '#3cadf3', color: '#401902' }}>
+                            {/* <Fab color="secondary" size="small" aria-label="scroll back to top" style={{ textAlign: 'right', bottom: '0px', right: '0px', background: '#3cadf3', color: '#401902' }}>
                             <Ecrivez/>
-                            </Fab>
+                            </Fab> */}
                         {/* </ScrollTop> */}
                     </Card>
                 </section>
@@ -243,7 +243,7 @@ const Methode = (props) => {
             </div>
         
         </div>
-        {/* <Footer /> */}
+        <Footer />
 
 
     </div>)

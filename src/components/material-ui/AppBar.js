@@ -229,8 +229,8 @@ export default function ButtonAppBar() {
 
             <Typography variant="h6" className={classes.title}>
               <Logo classesName={classes.logoNav } />
-              <LogoRepre classesName={classes.logoNav } />
-              <LogoFacil classesName={classes.logoNav } />
+              {/* <LogoRepre classesName={classes.logoNav } />
+              <LogoFacil classesName={classes.logoNav } /> */}
             </Typography>
             <Typography variant="h6" className={classes.title}>
               <Banniere />
