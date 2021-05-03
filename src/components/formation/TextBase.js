@@ -9,17 +9,17 @@ const TextBase = () => {
             <h3>Pourquoi s'équiper?</h3>
             <div className='zampContainer'>
                 <div>
-                    <p>Il peut y avoir plusieurs raisons pour s'équiper.</p>
+                    <p><img className='zamp' src={Zamp} alt='Zamp' />Il peut y avoir plusieurs raisons pour s'équiper.</p>
                     <p>Tout d'abord parce que vous aussi vous voulez diffuser du bien-être autour de vous, mais pas que.</p>
                     <p>Vous pouvez également décider de vous équiper à titre personnel, pour votre famille et vos proches.</p>
                     <p>En effet,bien que la plupart du temps les entraînements neuroptimal ® chez votre wellness sur du court terme suffisent, parfois les entraînements sont parfois sur du long terme et peuvent s'avérer plus coûteux que de s'équiper soi même, quand on a un enfant atypique, ou une famille nombreuse.</p>
                 </div>
-                <div className='zamp'><img src={Zamp} alt='Zamp' /></div>
+                {/* <div className='zamp'><img className='zamp' src={Zamp} alt='Zamp' /></div> */}
             </div>
             <div className='pcContainer'>
-                <div className='pc'><img src={Pc} alt='set neuroptimal' /></div>
+                {/* <div className='pc'><img className='pc' src={Pc} alt='set neuroptimal' /></div> */}
                 <div>
-                    <p>On peut également préférer avoir la machine à disposition, pour s'entraîner sans arrêt, car notre cerveau est en constante évolution et peut toujours progresser.</p>
+                    <p><img className='pc' src={Pc} alt='set neuroptimal' />On peut également préférer avoir la machine à disposition, pour s'entraîner sans arrêt, car notre cerveau est en constante évolution et peut toujours progresser.</p>
                     <p>Les personnes travaillant déjà dans le bien-être, ou étant professionnel du médical ou paramédical, peuvent également vouloir booster leurs résultats sur leurs clients/patients.</p>
 
                     <p>Les raisons de s'équiper sont multiples et Jenny se fera un plaisir de vous accompagner dans votre choix.</p>
