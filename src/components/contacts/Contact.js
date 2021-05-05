@@ -51,6 +51,9 @@ const Contact = () => {
             </div>
             {/* <div className='vide'></div> */}
             </div>
+            <div className="vide"></div>
+            <div className="vide"></div>
+            <div className="vide"></div>
             <Footer />
         </div>
     )

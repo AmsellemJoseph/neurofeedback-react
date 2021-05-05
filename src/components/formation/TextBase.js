@@ -34,7 +34,7 @@ const TextBase = () => {
 
             <p>Retrouvez les dates de formations sur le site officiel:</p>
             <a href='https://neuroptimal.com/member/jennifer-amsellem-2/' target='_blank' rel="noreferrer">www.neuroptimal.com</a>
-            <p>N'oubliez pas de choisir Jenny😝. (Jennifer Amsellem)</p>
+            {/* <p>N'oubliez pas de choisir Jenny😝. (Jennifer Amsellem)</p> */}
             <p>A très vite.</p>
         </div>
     )

@@ -3,6 +3,15 @@ import Nav from '../NavBar/Nav'
 import Footer from '../footer/Footer'
 import Card from './Card'
 
+import { makeStyles } from '@material-ui/core/styles';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Zoom from '@material-ui/core/Zoom';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+import Toolbar from '@material-ui/core/Toolbar';
+
+
 import Jenny from '../../assets/images/Jenny.jpeg'
 import Joseph from '../../assets/images/Joseph.jpg'
 import Nathalie from '../../assets/Wellness/nathalie.jpg'
@@ -18,11 +27,53 @@ import Simha from '../../assets/Wellness/Simha.jpg'
 import Valerie from '../../assets/Wellness/Valerie.jpg'
 import Dina from '../../assets/Wellness/Dina.jpg'
 import Levana from '../../assets/Wellness/Levana.jpg'
+import Karen from '../../assets/Wellness/Karen.jpg'
 
 
 import Israel from '../../assets/images/20x15/il.png'
 
-const Wellness = () => {
+
+const useStyles = makeStyles((theme) => ({
+    Btnroot: {
+        position: 'fixed',
+        bottom: theme.spacing(12),
+        zIndex:'100',
+        right: theme.spacing(1),
+    },
+}));
+
+
+function ScrollTop(props) {
+    const { children, window } = props;
+    const classes = useStyles();
+    const trigger = useScrollTrigger({
+        target: window ? window() : undefined,
+        disableHysteresis: true,
+        threshold: 100,
+    });
+
+    const handleClick = (event) => {
+        const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    };
+
+    return (
+        <Zoom in={trigger}>
+            <div onClick={handleClick} role="presentation" className={classes.Btnroot}>
+                {children}
+            </div>
+        </Zoom>
+    );
+}
+
+
+const Wellness = (props) => {
+
+    const classes = useStyles();
+
 
     const [wellnessProvider, setWellnessProvider] = useState([
         {
@@ -335,12 +386,38 @@ const Wellness = () => {
             description4:``,
             description5:``,
         },
+        {
+            id:17,
+            photo:Karen,
+            nom:'Karen Miaskovsky',
+            status:'Wellness Provider',
+            adresse:'Hadera et alentours',
+            drapeau:Israel,
+            pays:' Israel',
+            whatsapp:'',
+            tel:'',
+            telAffiche:'0546007883',
+            description1:`Ma découverte avec le Neurofeedback a démarré avec un de mes enfant, qui ressentait beaucoup de stress dans son quotidien.`,
+            description2:`J'ai commencé quelques séances, nous avons pu observer d'excellents résultats. J'ai été séduite par cette méthode.
+
+            J'ai ensuite décidé de me former à cette méthode afin d'aider les gens à se sentir mieux.`,
+            description3:`Je vous invite vraiment à tester la méthode Neurofeedback qui est révolutionnaire.`,
+            description4:`Je suis praticienne dans le Nord sur Hadera et alentours, et je me déplace également à domicile.`,
+            description5:`A très vite`,
+        },
     ])
 
 
     return (
         <div className='Wellness'>
             <Nav />
+            <CssBaseline />
+            <ScrollTop {...props}>
+        <Fab color="#11468c" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon style={{color:'#11468c'}}/>
+        </Fab>
+      </ScrollTop>
+        <Toolbar id="back-to-top-anchor" />
             {wellnessProvider.map((wellness) => {
                 return (
                     <Card
@@ -362,6 +439,7 @@ const Wellness = () => {
                     />
                 )
             })}
+            <div className="vide"></div>
             <Footer/>
         </div>
     )

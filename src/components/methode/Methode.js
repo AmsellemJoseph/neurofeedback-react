@@ -39,8 +39,9 @@ const useStyles = makeStyles((theme) => ({
     },
     Btnroot: {
         position: 'fixed',
-        bottom: theme.spacing(2),
-        right: theme.spacing(2),
+        bottom: theme.spacing(12),
+        zIndex:'100',
+        right: theme.spacing(1),
     },
     title: {
         fontSize: 14,
@@ -66,9 +67,6 @@ const useStyles = makeStyles((theme) => ({
 function ScrollTop(props) {
     const { children, window } = props;
     const classes = useStyles();
-    // Note that you normally won't need to set the window ref as useScrollTrigger
-    // will default to window.
-    // This is only being set here because the demo is in an iframe.
     const trigger = useScrollTrigger({
         target: window ? window() : undefined,
         disableHysteresis: true,
@@ -92,23 +90,20 @@ function ScrollTop(props) {
     );
 }
 
-ScrollTop.propTypes = {
-    children: PropTypes.element.isRequired,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
-    window: PropTypes.func,
-};
 
 const Methode = (props) => {
 
     const classes = useStyles();
 
     return (<div>
-        <CssBaseline />
         <Nav />
             <Ecrivez/>
+        <CssBaseline />
+            <ScrollTop {...props}>
+        <Fab color="#11468c" size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon style={{color:'#11468c'}}/>
+        </Fab>
+      </ScrollTop>
         <Toolbar id="back-to-top-anchor" />
         <div className='articleContainer'>
             <div className='article'>
@@ -241,8 +236,9 @@ const Methode = (props) => {
                 </section>
                 <img className='methodeImg' src={Saute} alt='personne qui saute' />
             </div>
-        
+
         </div>
+        <div className="vide"></div>
         <Footer />
 
 
